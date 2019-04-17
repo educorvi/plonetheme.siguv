@@ -1,0 +1,22 @@
+#!/bin/sh
+
+while :
+do
+
+    RESULT=`pgrep -f robot`
+
+    if [ "${RESULT:-null}" = null ]; then
+            echo "Robot not running, starting"
+            if ./bin/test --all -t robot; then
+                echo "Robot successful"
+            else
+                cd parts/test/ && find . -type f -exec curl --silent --ftp-create-dirs -T {} -u $2:$3 ftp://vps-14.operun.de/$1/robot/{} \;
+                echo "Robot failed - Report uploaded"
+                exit 1 #Exit with failure
+            fi
+            break
+    else
+            echo "running"
+    fi
+    sleep 20
+done

@@ -1,6 +1,7 @@
 before_script:
     - export PATH=$PATH:bin/
     - export DISPLAY=:99
+    - export TMPDIR=$HOME/tmp
 stages:
     - test
     - robot

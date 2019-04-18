@@ -1,13 +1,21 @@
 # -*- coding: utf-8 -*-
+from App.config import getConfiguration
+
+from Acquisition import aq_get
+
 from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
-from plone.app.testing import applyProfile
+from plone.app.testing import applyProfile, SITE_OWNER_NAME, SITE_OWNER_PASSWORD
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
-from plone.testing import z2
 
+
+import collective.sidebar
 import plonetheme.siguv
+import plonetheme.tokyo
+from plone.testing.zope import installProduct
+from plone.testing.zserver import ZSERVER_FIXTURE
 
 
 class PlonethemeSiguvLayer(PloneSandboxLayer):
@@ -18,10 +26,19 @@ class PlonethemeSiguvLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
+        request = aq_get(app, 'REQUEST')
+        request.environ['HTTP_ACCEPT_LANGUAGE'] = 'de'
+        self.loadZCML(package=collective.sidebar)
+        self.loadZCML(package=plonetheme.tokyo)
         self.loadZCML(package=plonetheme.siguv)
+        installProduct(app, 'collective.sidebar')
+        installProduct(app, 'plonetheme.tokyo')
+        installProduct(app, 'plonetheme.siguv')
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'plonetheme.siguv:default')
+        portal.acl_users.userFolderAddUser(
+            SITE_OWNER_NAME, SITE_OWNER_PASSWORD, ['Manager'], [])
 
 
 PLONETHEME_SIGUV_FIXTURE = PlonethemeSiguvLayer()
@@ -41,9 +58,9 @@ PLONETHEME_SIGUV_FUNCTIONAL_TESTING = FunctionalTesting(
 
 PLONETHEME_SIGUV_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        PLONETHEME_SIGUV_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
+        ZSERVER_FIXTURE,
+        PLONETHEME_SIGUV_FIXTURE,
     ),
     name='PlonethemeSiguvLayer:AcceptanceTesting',
 )

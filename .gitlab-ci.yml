@@ -1,7 +1,7 @@
 before_script:
     - export PATH=$PATH:bin/
     - export DISPLAY=:99
-    - export TMPDIR=tmp/
+    - export TMPDIR=./tmp/
 stages:
     - test
     - robot
@@ -9,6 +9,7 @@ test_operun:
     stage: test
     script:
         # Build
+        - echo $TMPDIR
         - /usr/bin/virtualenv .
         - ./bin/pip install -r requirements.txt
         - ./bin/buildout -c develop.cfg -t 3 -v

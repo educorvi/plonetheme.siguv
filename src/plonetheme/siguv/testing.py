@@ -1,21 +1,19 @@
 # -*- coding: utf-8 -*-
-from App.config import getConfiguration
-
 from Acquisition import aq_get
-
 from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
-from plone.app.testing import applyProfile, SITE_OWNER_NAME, SITE_OWNER_PASSWORD
+from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
-
+from plone.app.testing import SITE_OWNER_NAME
+from plone.app.testing import SITE_OWNER_PASSWORD
+from plone.testing.zope import installProduct
+from plone.testing.zserver import ZSERVER_FIXTURE
 
 import collective.sidebar
 import plonetheme.siguv
 import plonetheme.tokyo
-from plone.testing.zope import installProduct
-from plone.testing.zserver import ZSERVER_FIXTURE
 
 
 class PlonethemeSiguvLayer(PloneSandboxLayer):

@@ -1,18 +1,18 @@
 /* Add Custom CSS Here */
 
 :root {
-  --siguv-black: #19202A;
+  --siguv-black: #000000;
   --siguv-blue: #004994;
   --siguv-cyan: #0095DB;
   --siguv-green: #51AE31;
-  --siguv-grey: #9C9C9C;
+  --siguv-grey: #555555;
   --siguv-light-green: #AFCA06;
-  --siguv-orange: #f39200;
+  --siguv-light-grey: #9C9C9C;
+  --siguv-orange: #F39200;
   --siguv-red: #D40F14;
-  --siguv-slate: #555555;
   --siguv-turquoise: #008C8E;
   --siguv-violett: #B80D78;
-  --siguv-white: #F9F9F9;
+  --siguv-white: #FFFFFF;
   --siguv-yellow: #FFCC00;
 }
 

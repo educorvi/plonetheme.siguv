@@ -1,16 +1,52 @@
 @import '@{tokyo}';
 
-@tokyo-slate: #555555;
-@tokyo-black: #19202A;
-@tokyo-blue: #004994;
-@tokyo-yellow: #FFCC00;
-@tokyo-red: #D40F14;
-@tokyo-white: #F9F9F9;
-@tokyo-grey: #9C9C9C;
-
-@siguv-orange: #F39200;
-@siguv-violett: #B80D78;
-@siguv-light-green: #AFCA06;
-@siguv-green: #51AE31;
-@siguv-turquoise: #008C8E;
+@siguv-black: #000000;
+@siguv-blue: #004994;
 @siguv-cyan: #0095DB;
+@siguv-green: #51AE31;
+@siguv-grey: #555555;
+@siguv-light-green: #AFCA06;
+@siguv-light-grey: #9C9C9C;
+@siguv-orange: #F39200;
+@siguv-red: #D40F14;
+@siguv-turquoise: #008C8E;
+@siguv-violett: #B80D78;
+@siguv-white: #FFFFFF;
+@siguv-yellow: #FFCC00;
+
+@tokyo-black: @siguv-black;
+@tokyo-blue: @siguv-blue;
+@tokyo-grey: @siguv-light-grey;
+@tokyo-red: @siguv-red;
+@tokyo-slate: @siguv-grey;
+@tokyo-white: @siguv-white;
+@tokyo-yellow: @siguv-yellow;
+
+/* Screen Sizes */
+@screen-xxxs-max: 319px;
+@screen-xxs-min: 320px;
+@screen-xxs-max: 479px;
+@screen-xs-min: 480px;
+@screen-xs-max: 767px;
+@screen-sm-min: 768px;
+@screen-sm-max: 991px;
+@screen-md-min: 992px;
+@screen-md-max: 1199px;
+@screen-lg-min: 1200px;
+
+/* Vendor */
+.vendor(@property, @value) {
+     -moz-@{property}: @value;
+      -ms-@{property}: @value;
+       -o-@{property}: @value;
+  -webkit-@{property}: @value;
+          @{property}: @value;
+}
+
+@import 'fonts.less';
+
+html {
+  body {
+    font-family: 'DGUVMeta', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}

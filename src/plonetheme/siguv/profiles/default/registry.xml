@@ -2,22 +2,27 @@
 <registry>
 
   <records interface="Products.CMFPlone.interfaces.IResourceRegistry" prefix="plone.resources/siguv">
-    <value key="js">++theme++plonetheme.siguv/js/siguv.js</value>
     <value key="css">
       <element>++theme++plonetheme.siguv/less/siguv.less</element>
     </value>
-    <value key="deps">jquery</value>
   </records>
 
   <records interface="Products.CMFPlone.interfaces.IBundleRegistry" prefix="plone.bundles/siguv">
     <value key="resources">
       <element>siguv</element>
     </value>
-    <value key="jscompilation">++theme++plonetheme.siguv/js/siguv-compiled.js</value>
     <value key="csscompilation">++theme++plonetheme.siguv/less/siguv-compiled.css</value>
     <value key="enabled">True</value>
     <value key="compile">True</value>
-    <value key="depends">tokyo</value>
+    <value key="depends">tokyo,tokyo-bootstrap</value>
+    <value key="last_compilation">2019-05-07 16:00:00</value>
+  </records>
+
+  <records interface="Products.CMFPlone.interfaces.IBundleRegistry" prefix="plone.bundles/siguv-static">
+    <value key="csscompilation">++theme++plonetheme.siguv/custom.css</value>
+    <value key="enabled">True</value>
+    <value key="compile">False</value>
+    <value key="depends">siguv</value>
     <value key="last_compilation">2019-05-07 16:00:00</value>
   </records>
 

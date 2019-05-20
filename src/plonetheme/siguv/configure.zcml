@@ -21,7 +21,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="plonetheme.siguv"
+      title="Siguv Theme"
       directory="profiles/default"
       description="Installs the plonetheme.siguv add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -30,7 +30,7 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="plonetheme.siguv (uninstall)"
+      title="Siguv Theme (uninstall)"
       directory="profiles/uninstall"
       description="Uninstalls the plonetheme.siguv add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"

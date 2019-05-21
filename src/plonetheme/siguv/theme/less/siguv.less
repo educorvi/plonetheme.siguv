@@ -49,4 +49,18 @@ html {
   body {
     font-family: 'DGUVMeta', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+
+  a {
+    color: @siguv-blue;
+    text-decoration: none;
+
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+
+    &:hover {
+      color: @siguv-cyan;
+    }
+  }
 }

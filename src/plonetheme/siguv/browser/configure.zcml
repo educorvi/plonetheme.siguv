@@ -8,7 +8,7 @@
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
       directory="overrides"
-      layer="plonetheme.siguv.interfaces.IPlonethemeSiguvLayer"
+      layer="plonetheme.tokyo.interfaces.IPlonethemeTokyoLayer"
       />
 
   <!-- Publish static files -->

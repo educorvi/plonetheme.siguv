@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """Module where all interfaces, events and exceptions live."""
+from plonetheme.tokyo.interfaces import IPlonethemeTokyoLayer
 
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
-
-class IPlonethemeSiguvLayer(IDefaultBrowserLayer):
+class IPlonethemeSiguvLayer(IPlonethemeTokyoLayer):
     """Marker interface that defines a browser layer."""

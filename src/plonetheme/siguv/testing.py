@@ -12,6 +12,7 @@ from plone.testing.zope import installProduct
 from plone.testing.zserver import ZSERVER_FIXTURE
 
 import collective.sidebar
+import nva.footerviewlet
 import plonetheme.siguv
 import plonetheme.tokyo
 
@@ -29,9 +30,11 @@ class PlonethemeSiguvLayer(PloneSandboxLayer):
         self.loadZCML(package=collective.sidebar)
         self.loadZCML(package=plonetheme.tokyo)
         self.loadZCML(package=plonetheme.siguv)
+        self.loadZCML(package=nva.footerviewlet)
         installProduct(app, 'collective.sidebar')
         installProduct(app, 'plonetheme.tokyo')
         installProduct(app, 'plonetheme.siguv')
+        installProduct(app, 'nva.footerviewlet')
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'plonetheme.siguv:default')

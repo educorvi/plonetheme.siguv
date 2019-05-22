@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+ <hidden manager="plone.portalfooter" skinname="Plone Default">
+  <viewlet name="plone.footer"/>
+ </hidden>
+</object>

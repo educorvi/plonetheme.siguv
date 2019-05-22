@@ -2,15 +2,31 @@
             xmlns:tal="http://xml.zope.org/namespaces/tal">
 
   <header id="menu-header" class="active" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
-    <div class="container-fluid header-wrapper">
+    <div class="container header-wrapper">
 
-      <a class="header-logo" href="${navroot}">
-        <img src="" alt="" tal:attributes="src string:${navroot}/++theme++plonetheme.siguv/logo/dguv_w.svg">
-      </a>
+      <div class="row">
 
-      <div class="header-icons">
-        <i id="portaltab-burger-menu" class="glyphicon glyphicon-menu-hamburger"></i>
-      </div>
+        <div class="col-6">
+          <a class="header-logo" href="${navroot}">
+            <img src="" alt="" tal:attributes="src string:${navroot}/++theme++plonetheme.siguv/logo/bg-etem.svg">
+          </a>
+        </div>
+
+        <div class="col-4">
+          <form class="header-search" action="" tal:define="search_url context/@@plone_portal_state/portal_url" tal:attributes="action python:search_url+'/@@search'">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search" name="SearchableText" placeholder="Suchbegriff oder Webcode">
+            </div>
+          </form>
+        </div>
+
+        <div class="col-2">
+          <div class="header-icons">
+            <i id="portaltab-burger-menu" class="glyphicon glyphicon-menu-hamburger"></i>
+          </div>
+        </div>
+
+    </div>
 
     </div>
   </header>

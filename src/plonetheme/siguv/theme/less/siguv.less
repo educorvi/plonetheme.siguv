@@ -46,8 +46,16 @@
 @import 'fonts.less';
 
 html {
+
   body {
     font-family: 'DGUVMeta', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    #content {
+      .content-inner {
+        padding: 130px 30px 100px 30px;
+      }
+    }
+
   }
 
   a {
@@ -63,4 +71,53 @@ html {
       color: @siguv-cyan;
     }
   }
+
+  #menu-header {
+    height: 100px;
+
+    &.active {
+      background-color: @siguv-white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-wrapper {
+      display: block;
+      padding: 0 30px;
+
+      .header-logo img {
+        height: 60px;
+        width: auto;
+        padding: 0;
+        margin: 20px 0 0 0;
+      }
+
+      .header-search {
+        margin: 30px 0 0 0;
+        display: none;
+      }
+      .header-icons {
+        color: @siguv-blue;
+      }
+    }
+  }
+
+  #portaltab-burger-menu {
+    margin: 20px 0;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+  html {
+    #menu-header {
+      .header-wrapper {
+        .header-search {
+          display: block;
+        }
+      }
+    }
+  }
+
 }

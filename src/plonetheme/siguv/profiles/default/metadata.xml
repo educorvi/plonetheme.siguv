@@ -3,5 +3,6 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-plonetheme.tokyo:default</dependency>
+    <dependency>profile-nva.footerviewlet:default</dependency>
   </dependencies>
 </metadata>

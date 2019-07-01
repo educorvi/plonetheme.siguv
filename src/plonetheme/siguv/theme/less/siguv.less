@@ -36,11 +36,11 @@
 
 /* Vendor */
 .vendor(@property, @value) {
-     -moz-@{property}: @value;
-      -ms-@{property}: @value;
-       -o-@{property}: @value;
+  -moz-@{property}: @value;
+  -ms-@{property}: @value;
+  -o-@{property}: @value;
   -webkit-@{property}: @value;
-          @{property}: @value;
+  @{property}: @value;
 }
 
 @import 'fonts.less';
@@ -56,6 +56,54 @@ html {
       }
     }
 
+    &[class^="manage-viewlets"],
+    &[class*="manage-viewlets "] {
+      background-color: white;
+      height: 100%;
+      padding: 15px !important;
+
+      .hiddenViewlet {
+        background-color: rgba(0, 0, 0, 0.125);
+      }
+
+      .viewlet {
+        .row {
+          margin: 0;
+        }
+
+        dt {
+          a {
+            text-decoration: none;
+            border-bottom: 0;
+            outline: none;
+          }
+        }
+      }
+
+      #menu-header {
+        position: relative;
+      }
+
+      #content .container {
+        padding: 0;
+      }
+
+      .viewletmanager {
+        padding: 0;
+        margin: 0 0 15px 0;
+        max-width: none;
+        width: 100%;
+
+        .documentFirstHeading,
+        .documentDescription {
+          margin: 8px;
+        }
+      }
+
+      footer {
+        background-color: inherit;
+      }
+    }
   }
 
   a {
@@ -95,6 +143,7 @@ html {
         margin: 40px 0 0 0;
         display: none;
       }
+
       .header-icons {
         color: @siguv-blue;
       }

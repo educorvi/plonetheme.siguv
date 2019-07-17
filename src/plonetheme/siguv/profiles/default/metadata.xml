@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-plonetheme.tokyo:default</dependency>
     <dependency>profile-nva.footerviewlet:default</dependency>
+    <dependency>profile-nva.testbootstrap:default</dependency>
   </dependencies>
 </metadata>

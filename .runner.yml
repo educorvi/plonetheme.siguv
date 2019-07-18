@@ -11,12 +11,12 @@ test_operun:
     script:
         # Build
         - /usr/bin/virtualenv .
-#        - mkdir temp
-#        - cd temp
-#        - eval $TEMP
-#        - cd ..
-#        - echo $TEMP
-#        - TEMDIR=$TEMP ./bin/pip install --cache-dir=$TEMP --build=$TEMP plone.staticresources==1.1.0
+        - mkdir temp
+        - cd temp
+        - eval $TEMP
+        - cd ..
+        - echo $TEMP
+        - TEMDIR=$TEMP ./bin/pip install --cache-dir=$TEMP --build=$TEMP plone.staticresources==1.1.0
         - ./bin/pip install -r requirements.txt
         - ./bin/buildout -c develop.cfg -t 3 -vvvvv
         # Test

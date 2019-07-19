@@ -1,0 +1,28 @@
+before_script:
+    - export PATH=$PATH:bin/
+    - export DISPLAY=:99
+stages:
+    - test
+    - robot
+test_siguv:
+    stage: test
+    script:
+        # Build
+        - /usr/bin/virtualenv .
+        - ./bin/pip install -r requirements.txt
+        - ./bin/buildout -c develop.cfg -t 3 -v
+        # Test
+        - ./bin/coverage erase
+        - ./bin/coverage run -p --source=src bin/test || exit 1
+        - ./bin/coverage combine
+        - ./bin/coverage html
+        - ./bin/coverage report
+robot_siguv:
+    stage: test
+    script:
+        # Build
+        - /usr/bin/virtualenv .
+        - ./bin/pip install -r requirements.txt
+        - ./bin/buildout -c develop.cfg -t 3 -v
+        # Robot
+        - ./bin/test --all -t robot

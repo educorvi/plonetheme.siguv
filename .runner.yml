@@ -4,11 +4,11 @@ before_script:
 stages:
     - test
     - robot
-Unit Tests:
+unit tests:
     stage: test
     script:
         # Build
-        - /usr/bin/virtualenv .
+        - /usr/bin/virtualenv --python=python2.7 .
         - ./bin/pip install -r requirements.txt
         - ./bin/buildout -c develop.cfg -t 3 -v
         # Test
@@ -17,11 +17,11 @@ Unit Tests:
         - ./bin/coverage combine
         - ./bin/coverage html
         - ./bin/coverage report
-Robot Tests:
+robot tests:
     stage: robot
     script:
         # Build
-        - /usr/bin/virtualenv .
+        - /usr/bin/virtualenv --python=python2.7 .
         - ./bin/pip install -r requirements.txt
         - ./bin/buildout -c develop.cfg -t 3 -v
         # Robot

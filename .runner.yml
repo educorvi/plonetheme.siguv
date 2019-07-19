@@ -4,7 +4,7 @@ before_script:
 stages:
     - test
     - robot
-test_siguv:
+Unit Tests:
     stage: test
     script:
         # Build
@@ -17,8 +17,8 @@ test_siguv:
         - ./bin/coverage combine
         - ./bin/coverage html
         - ./bin/coverage report
-robot_siguv:
-    stage: test
+Robot Tests:
+    stage: robot
     script:
         # Build
         - /usr/bin/virtualenv .

@@ -16,23 +16,23 @@ msgstr ""
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "All dates"
-msgstr ""
+msgstr "Alle Daten"
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "Attendees"
-msgstr ""
+msgstr "Teilnehmer"
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "Call Now"
-msgstr ""
+msgstr "Jetzt anrufen"
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "Contact Name"
-msgstr ""
+msgstr "Kontaktname"
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "Contact Phone"
-msgstr ""
+msgstr "Kontakt-Telefon"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Installs the plonetheme.siguv add-on."
@@ -40,7 +40,7 @@ msgstr ""
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "Send E-Mail"
-msgstr ""
+msgstr "E-Mail senden"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Siguv Theme"
@@ -58,35 +58,35 @@ msgstr ""
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "label_add_to_ical"
-msgstr ""
+msgstr "Als iCal herunterladen"
 
 #. Default: "Upcoming Events"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
 msgid "mode_future_link"
-msgstr ""
+msgstr "Kommende Veranstaltungen"
 
 #. Default: "Past Events"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
 msgid "mode_past_link"
-msgstr ""
+msgstr "Vergangene Ereignisse"
 
 #. Default: "More Information"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "more_information"
-msgstr ""
+msgstr "Mehr Informationen"
 
 #. Default: "Download this event in iCal format"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "title_add_to_ical"
-msgstr ""
+msgstr "Laden Sie diese Veranstaltung im iCal-Format herunter"
 
 #. Default: "When"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "when"
-msgstr ""
+msgstr "Wann"
 
 #. Default: "Where"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "where"
-msgstr ""
+msgstr "Woher"

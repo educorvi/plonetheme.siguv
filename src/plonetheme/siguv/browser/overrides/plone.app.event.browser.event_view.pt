@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.siguv">
+
+<body>
+
+  <metal:fluid fill-slot="fluid">
+    <metal:block define-macro="fluid">
+      <tal:def tal:define="data nocall:view/data; summary python:context.unrestrictedTraverse('@@event_summary')">
+
+        <div class="event" itemscope itemtype="http://data-vocabulary.org/Event">
+
+          <section class="mb-3" id="about">
+            <div class="container">
+              <div class="col-md-12">
+                <div class="row">
+
+                  <div class="col-lg-6 mb-3">
+
+                    <h2 itemprop="summary">
+                      <span tal:content="data/title"></span><br>
+                      <small class="lead">
+                        <span itemprop="startDate"
+                              tal:content="python:here.toLocalizedTime(data.start) if data.whole_day
+                                                  else here.toLocalizedTime(data.start, long_format=1)">
+                        </span>
+                        <tal:cond tal:condition="not:data/open_end">
+                          &#9702;
+                          <span itemprop="endDate"
+                                tal:content="python:here.toLocalizedTime(data.start) if data.whole_day
+                                                    else here.toLocalizedTime(data.end, long_format=1)">
+                          </span>
+                        </tal:cond>
+                      </small>
+                    </h2>
+
+                    <p itemprop="description" tal:content="data/description"></p>
+
+                    <a itemprop="url" class="btn btn-outline-light mr-2" href="#" role="button" target="_blank" rel="noreferrer"
+                       tal:attributes="href data/event_url" tal:condition="data/event_url" i18n:translate="more_information">More Information</a>
+
+                    <tal:def tal:define="here_url context/@@plone_context_state/object_url;
+                                          portal_url context/@@plone_portal_state/portal_url">
+                      <a href="#" rel="nofollow"
+                         title="Download this event in iCal format"
+                         class="btn btn-outline-light"
+                         tal:attributes="href string:$here_url/ics_view"
+                         i18n:attributes="title title_add_to_ical"
+                         i18n:translate="label_add_to_ical">
+                        Download as iCal
+                      </a>
+                    </tal:def>
+
+                  </div>
+
+                  <div class="col-lg-3 mb-3" tal:condition="data/location">
+                    <h3>
+                      <span i18n:translate="where">Where</span><br>
+                      <small class="lead">
+                        <span itemprop="location" tal:content="data/location"></span>
+                      </small>
+                    </h3>
+                  </div>
+
+                  <div class="col-lg-3" tal:condition="data/timezone">
+                    <h3 tal:define="start_tzname data/timezone;
+                                    start_utcdelta python:data.start.tzinfo.utcoffset(data.start);
+                                    start_utcoffset python:(start_utcdelta.days*86400+start_utcdelta.seconds)*100/60/60;
+                                    start_utcoffset python:int(start_utcoffset)">
+                      <span i18n:translate="when">When</span><br>
+                      <small>
+                        <span class="lead">
+                          <tal:tzname tal:replace="start_tzname"></tal:tzname> UTC
+                          <tal:tzoffset tal:replace="start_utcoffset" />
+                        </span>
+                      </small>
+                    </h3>
+                    <p tal:content="structure python:summary.formatted_date(context)"></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <tal:event_summary tal:replace="structure context/@@event_summary" />
+
+        </div>
+
+      </tal:def>
+    </metal:block>
+  </metal:fluid>
+
+</body>
+
+</html>

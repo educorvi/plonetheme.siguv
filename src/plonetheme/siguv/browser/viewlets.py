@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
 
 from plone.app.layout.viewlets import ViewletBase
+from plone.app.layout.viewlets.common import GlobalSectionsViewlet
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
-class CollapsibleNav(ViewletBase):
+class CollapsibleNav(GlobalSectionsViewlet):
 
-    pass
+    index = ViewPageTemplateFile('templates/collapsible_nav.pt')
+
+    def return_navtree(self, path=None):
+        if path:
+            return self.navtree.get(path, [])
+        return self.navtree.get(self.navtree_path, [])

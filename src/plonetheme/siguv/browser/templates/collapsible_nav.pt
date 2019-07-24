@@ -1,18 +1,33 @@
-<div id="collapsible-nav">
+<div id="collapsible-nav" class="">
 
   <div class="nav-contents container">
     <div class="row">
       <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg p-2 navbar-light">
+        <nav class="navbar navbar-expand-lg pt-2 pb-0 navbar-light">
 
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
 
               <tal:define tal:define="items view/return_navtree">
-                <tal:repeat tal:repeat="item items">
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="${item/url}">${item/title}</a>
+                <tal:repeat tal:repeat="item items">
+                  <li class="nav-item"
+                      tal:define="sub python: view.return_navtree(item['path'])"
+                      tal:attributes="class python: view.get_item_class(item, sub)">
+
+                    <a class="nav-link"
+                       data-toggle=""
+                       href="${item/url}"
+                       tal:attributes="class python: 'nav-link dropdown-toggle' if sub else 'nav-link'"
+                       tal:attributes="data-toggle python: 'dropdown' if sub else ''"
+                       id="${item/id}">${item/title}</a>
+
+                    <div class="dropdown-menu" tal:condition="sub">
+                      <tal:repeat tal:repeat="subitem sub">
+                        <a class="dropdown-item" href="${subitem/url}">${subitem/title}</a>
+                      </tal:repeat>
+
+                    </div>
                   </li>
 
                 </tal:repeat>
@@ -26,8 +41,8 @@
     </div>
   </div>
 
-  <div class="nav-toggler p-2">
-    <div class="d-flex justify-content-center align-items-center">
+  <div class="nav-toggler p-0">
+    <div class="d-flex flex-row-reverse pr-2">
       <div class="nav-lines"></div>
     </div>
   </div>

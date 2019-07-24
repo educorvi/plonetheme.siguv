@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from plone.app.layout.viewlets import ViewletBase
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 

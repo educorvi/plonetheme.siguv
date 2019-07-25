@@ -14,13 +14,13 @@
       <tal:cond tal:condition="python:'occurrences' not in excludes">
         <tal:cond tal:define="next_occs view/next_occurrences; all_occs view/num_more_occurrences"
                   tal:condition="python:len(next_occs) > 1 or all_occs > 1">
-          <div class="alert alert-dark" role="alert">
+          <div class="alert alert-dark mb-2" role="alert">
 
             <strong i18n:translate="">All dates</strong>
 
             <span tal:repeat="occ next_occs">
               <tal:def tal:define="this_is_occ python: occ.absolute_url() == context.absolute_url()">
-                <a class="alert-link"
+                <a class="alert-link px-3 d-inline-block font-weight-normal"
                    tal:attributes="href occ/absolute_url"
                    tal:omit-tag="this_is_occ">
                   <strong tal:omit-tag="not: this_is_occ">
@@ -105,7 +105,6 @@
         </div>
 
       </div>
-
     </div>
   </tal:def>
 </body>

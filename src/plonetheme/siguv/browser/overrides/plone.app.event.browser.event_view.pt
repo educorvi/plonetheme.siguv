@@ -24,19 +24,6 @@
 
                     <h2 itemprop="summary">
                       <span tal:content="data/title"></span><br>
-                      <small class="lead">
-                        <span itemprop="startDate"
-                              tal:content="python:here.toLocalizedTime(data.start) if data.whole_day
-                                                  else here.toLocalizedTime(data.start, long_format=1)">
-                        </span>
-                        <tal:cond tal:condition="not:data/open_end">
-                          &#9702;
-                          <span itemprop="endDate"
-                                tal:content="python:here.toLocalizedTime(data.start) if data.whole_day
-                                                    else here.toLocalizedTime(data.end, long_format=1)">
-                          </span>
-                        </tal:cond>
-                      </small>
                     </h2>
 
                     <p itemprop="description" tal:content="data/description"></p>
@@ -67,20 +54,39 @@
                     </h3>
                   </div>
 
-                  <div class="col-lg-3" tal:condition="data/timezone">
-                    <h3 tal:define="start_tzname data/timezone;
-                                    start_utcdelta python:data.start.tzinfo.utcoffset(data.start);
-                                    start_utcoffset python:(start_utcdelta.days*86400+start_utcdelta.seconds)*100/60/60;
-                                    start_utcoffset python:int(start_utcoffset)">
+                  <div class="col-lg-3" tal:condition="data/timezone"
+                           tal:define="start_tzname data/timezone;
+                                       start_utcdelta python:data.start.tzinfo.utcoffset(data.start);
+                                       start_utcoffset python:(start_utcdelta.days*86400+start_utcdelta.seconds)*100/60/60;
+                                       start_utcoffset python:int(start_utcoffset)">
+                    <h3>
                       <span i18n:translate="when">When</span><br>
                       <small>
                         <span class="lead">
-                          <tal:tzname tal:replace="start_tzname"></tal:tzname> UTC
-                          <tal:tzoffset tal:replace="start_utcoffset" />
+                          <p tal:content="structure python:summary.formatted_date(context)"></p>
                         </span>
                       </small>
                     </h3>
-                    <p tal:content="structure python:summary.formatted_date(context)"></p>
+                    <tal:tzname tal:replace="start_tzname"></tal:tzname> UTC
+                    <tal:tzoffset tal:replace="start_utcoffset" />
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-3" id="text">
+            <div class="container" tal:condition="data/text">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-text">
+                        <tal:text content="structure data/text" />
+                      </div>
+                    </div>
                   </div>
 
                 </div>

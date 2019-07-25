@@ -63,3 +63,80 @@ msgstr ""
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settings_navigation_status_enabled"
 msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "All dates"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Attendees"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Call Now"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Name"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Phone"
+msgstr ""
+
+#: plonetheme/siguv/configure.zcml
+msgid "Installs the plonetheme.siguv add-on."
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Send E-Mail"
+msgstr ""
+
+#: plonetheme/siguv/configure.zcml
+msgid "Siguv Theme"
+msgstr ""
+
+#: plonetheme/siguv/configure.zcml
+msgid "Siguv Theme (uninstall)"
+msgstr ""
+
+#: plonetheme/siguv/configure.zcml
+msgid "Uninstalls the plonetheme.siguv add-on."
+msgstr ""
+
+#. Default: "Download as iCal"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "label_add_to_ical"
+msgstr ""
+
+#. Default: "Upcoming Events"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+msgid "mode_future_link"
+msgstr ""
+
+#. Default: "Past Events"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+msgid "mode_past_link"
+msgstr ""
+
+#. Default: "More Information"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "more_information"
+msgstr ""
+
+#. Default: "Download this event in iCal format"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "title_add_to_ical"
+msgstr ""
+
+#. Default: "When"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "when"
+msgstr ""
+
+#. Default: "Where"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "where"
+msgstr ""

@@ -1,0 +1,112 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="plonetheme.siguv"
+      tal:omit-tag="">
+
+<body tal:omit-tag="">
+  <tal:def tal:define="data python:view.data; excludes view/excludes">
+    <div class="container">
+
+      <tal:cond tal:condition="python:'occurrences' not in excludes">
+        <tal:cond tal:define="next_occs view/next_occurrences; all_occs view/num_more_occurrences"
+                  tal:condition="python:len(next_occs) > 1 or all_occs > 1">
+          <div class="alert alert-dark mb-2" role="alert">
+
+            <strong i18n:translate="">All dates</strong>
+
+            <span tal:repeat="occ next_occs">
+              <tal:def tal:define="this_is_occ python: occ.absolute_url() == context.absolute_url()">
+                <a class="alert-link px-3 d-inline-block font-weight-normal"
+                   tal:attributes="href occ/absolute_url"
+                   tal:omit-tag="this_is_occ">
+                  <strong tal:omit-tag="not: this_is_occ">
+                    <tal:date tal:replace="structure python:view.formatted_date(occ)" />
+                  </strong>
+                </a>
+              </tal:def>
+            </span>
+
+            <span tal:condition="view/num_more_occurrences">
+              <a class="alert-link"
+                 tal:attributes="href string:${view/event_context/absolute_url}/@@event_listing"
+                 tal:content="view/more_occurrences_text"
+                 i18n:translate="">
+                There are 12 more occurrences.
+              </a>
+            </span>
+
+          </div>
+        </tal:cond>
+      </tal:cond>
+
+      <div class="row">
+
+        <tal:cond tal:condition="python:'contact' not in excludes">
+
+          <div class="col-md-6 mb-3">
+            <tal:define tal:define="mail data/contact_email; name data/contact_name"
+                        tal:condition="python:name or mail">
+              <div class="card">
+                <div class="card-body">
+
+                  <h5 class="card-title mb-3" i18n:translate="">Contact Name</h5>
+
+                  <div class="card-text mb-3">
+                    <h3 tal:content="name"></h3>
+                  </div>
+
+                  <div class="card-text" tal:condition="mail">
+                    <a class="btn btn-outline-dark" tal:attributes="href string:mailto:${mail}" i18n:translate="">Send E-Mail</a>
+                  </div>
+
+                </div>
+              </div>
+            </tal:define>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card" tal:condition="data/contact_phone">
+              <div class="card-body">
+
+                <h5 class="card-title mb-3" i18n:translate="">Contact Phone</h5>
+
+                <div class="card-text mb-3">
+                  <h3 tal:content="data/contact_phone"></h3>
+                </div>
+
+                <div class="card-text">
+                  <a class="btn btn-outline-dark" tal:attributes="href string:tel:${data/contact_phone}" i18n:translate="">Call Now</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </tal:cond>
+
+        <div class="col-md-12 mb-3">
+
+          <div class="card" tal:condition="data/attendees|nothing">
+            <div class="card-body">
+
+              <h5 class="card-title" i18n:translate="">Attendees</h5>
+
+              <div class="card-text">
+                <p itemprop="attendee" tal:content="python:', '.join(data.attendees)"></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </tal:def>
+</body>
+
+</html>

@@ -17,8 +17,7 @@
                 <a class="nav-link"
                    data-toggle=""
                    href="${item/url}"
-                   tal:attributes="class python: 'nav-link dropdown-toggle' if sub else 'nav-link'"
-                   tal:attributes="data-toggle python: 'dropdown' if sub else ''"
+                   tal:attributes="class python: 'nav-link dropdown-toggle' if sub else 'nav-link'; data-toggle python: 'dropdown' if sub else '';"
                    id="${item/id}">${item/title}</a>
 
                 <div class="dropdown-menu" tal:condition="sub">

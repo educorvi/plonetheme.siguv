@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,54 +12,54 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: plonetheme.siguv\n"
+"Domain: DOMAIN\n"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Installs the plonetheme.siguv add-on."
-msgstr ""
+msgstr "Installiert plonetheme.siguv."
 
 #: plonetheme/siguv/profiles/default/controlpanel.xml
 msgid "Siguv Settings"
-msgstr ""
+msgstr "Siguv Settings"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Siguv Theme"
-msgstr ""
+msgstr "Siguv Theme"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Siguv Theme (uninstall)"
-msgstr ""
+msgstr "Siguv Theme (uninstall)"
 
 #: plonetheme/siguv/configure.zcml
 msgid "Uninstalls the plonetheme.siguv add-on."
-msgstr ""
+msgstr "Deinstalliert plonetheme.siguv."
 
 #. Default: "Select if the main navigation is enabled, disabled or always active."
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "controlpanel_siguv_settings_navigation_status_description"
-msgstr ""
+msgstr "Wählen Sie aus ob die Navigation eingeschaltet, ausgeschaltet oder zugeklappt sein soll."
 
 #. Default: "Navigation Status"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "controlpanel_siguv_settings_navigation_status_title"
-msgstr ""
+msgstr "Navigation Status"
 
 #. Default: "Siguv Settings"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settigns_title"
-msgstr ""
+msgstr "Siguv Settings"
 
 #. Default: "Collapsed"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settings_navigation_status_collapsed"
-msgstr ""
+msgstr "Zugeklappt"
 
 #. Default: "Disabled"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settings_navigation_status_disabled"
-msgstr ""
+msgstr "Ausgeschaltet"
 
 #. Default: "Enabled"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settings_navigation_status_enabled"
-msgstr ""
+msgstr "Eingeschaltet"

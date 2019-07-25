@@ -18,7 +18,7 @@ NavigationStatusVocabulary = SimpleVocabulary(
                         default=u'Disabled')),
      SimpleTerm(value=u'collapsed',
                 title=_(u'siguv_settings_navigation_status_collapsed',
-                        default=u'Zugeklappt'))],
+                        default=u'Collapsed'))],
 )
 
 

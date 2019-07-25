@@ -51,10 +51,22 @@ html {
   body {
     font-family: 'DGUVMeta', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+    #about {
+      padding: 180px 0 60px 0;
+      background-color: @siguv-blue;
+      color: @siguv-white;
+    }
+
     #content {
       .content-inner {
         padding: 160px 30px 100px 30px;
       }
+    }
+
+    abbr[title] {
+      border-bottom: none !important;
+      cursor: inherit !important;
+      text-decoration: none !important;
     }
 
     &[class^="manage-viewlets"],
@@ -79,14 +91,6 @@ html {
             outline: none;
           }
         }
-      }
-
-      #menu-header {
-        position: relative;
-      }
-
-      #content .container {
-        padding: 0;
       }
 
       .viewletmanager {

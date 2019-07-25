@@ -1,7 +1,7 @@
 <tal:header xmlns="http://www.w3.org/1999/xhtml"
             xmlns:tal="http://xml.zope.org/namespaces/tal">
 
-  <header id="menu-header" class="active" tal:define="navroot context/@@plone_portal_state/navigation_root_url; logo view/logo; logo_title view/logo_title">
+  <div id="menu-header" class="active" tal:define="navroot context/@@plone_portal_state/navigation_root_url; logo view/logo; logo_title view/logo_title">
     <div class="container header-wrapper">
 
       <div class="row">
@@ -29,6 +29,6 @@
     </div>
 
     </div>
-  </header>
+  </div>
 
 </tal:header>

@@ -28,4 +28,6 @@
     <value key="last_compilation">2019-07-24 16:00:00</value>
   </records>
 
+  <records interface="plonetheme.siguv.controlpanel.controlpanel.ISettings" prefix="plonetheme.siguv" />
+
 </registry>

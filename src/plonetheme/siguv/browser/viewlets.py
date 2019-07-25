@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from plone import api
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -13,10 +14,16 @@ class NavigationViewlet(GlobalSectionsViewlet):
             path = self.navtree_path
         return self.navtree.get(path, [])
 
-    def get_navigation_class(self):
-        # Fetch from settings if navigation is enabled (default),
-        # disabled or always-active.
-        return 'enabled'
+    @staticmethod
+    def get_navigation_class():
+        """
+        Fetch from settings if navigation is enabled (default), disabled
+        or collapsed.
+        """
+        return api.portal.get_registry_record(
+            name='plonetheme.siguv.navigation_status',
+            default='enabled',
+        )
 
     def get_item_class(self, item, sub):
         # We don't compute 'sub' from item as it expensive

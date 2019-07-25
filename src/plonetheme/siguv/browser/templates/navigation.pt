@@ -1,4 +1,4 @@
-<div id="siguv-navigation" class="{view/get_navigation_class}">
+<div id="siguv-navigation" class="${view/get_navigation_class}">
 
   <div class="container">
     <div class="row">

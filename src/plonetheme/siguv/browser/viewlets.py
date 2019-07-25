@@ -4,14 +4,19 @@ from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
-class CollapsibleNav(GlobalSectionsViewlet):
+class NavigationViewlet(GlobalSectionsViewlet):
 
-    index = ViewPageTemplateFile('templates/collapsible_nav.pt')
+    index = ViewPageTemplateFile('templates/navigation.pt')
 
     def return_navtree(self, path=None):
         if not path:
             path = self.navtree_path
         return self.navtree.get(path, [])
+
+    def get_navigation_class(self):
+        # Fetch from settings if navigation is enabled (default),
+        # disabled or always-active.
+        return 'enabled'
 
     def get_item_class(self, item, sub):
         # We don't compute 'sub' from item as it expensive

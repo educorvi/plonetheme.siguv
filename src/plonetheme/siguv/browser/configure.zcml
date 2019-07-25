@@ -18,10 +18,10 @@
       />
 
   <browser:viewlet
-      name="collapsible.nav"
-      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      name="siguv.navigation"
+      manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
       permission="zope2.View"
-      class=".viewlets.CollapsibleNav"
+      class=".viewlets.NavigationViewlet"
       layer="plonetheme.tokyo.interfaces.IPlonethemeTokyoLayer"
       />
 

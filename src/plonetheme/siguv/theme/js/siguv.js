@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-  $('.nav-toggler').on('click', function () {
-    $('#collapsible-nav').toggleClass('active');
+  $('.navigation-menu').on('click', function () {
+    $('#siguv-navigation').toggleClass('active');
   });
 
 });

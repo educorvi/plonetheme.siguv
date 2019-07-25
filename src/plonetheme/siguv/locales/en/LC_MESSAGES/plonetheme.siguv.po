@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-07-25 14:22+0000\n"
+"POT-Creation-Date: 2019-07-25 14:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,56 +13,6 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
-
-#: plonetheme/siguv/configure.zcml
-msgid "Installs the plonetheme.siguv add-on."
-msgstr ""
-
-#: plonetheme/siguv/profiles/default/controlpanel.xml
-msgid "Siguv Settings"
-msgstr ""
-
-#: plonetheme/siguv/configure.zcml
-msgid "Siguv Theme"
-msgstr ""
-
-#: plonetheme/siguv/configure.zcml
-msgid "Siguv Theme (uninstall)"
-msgstr ""
-
-#: plonetheme/siguv/configure.zcml
-msgid "Uninstalls the plonetheme.siguv add-on."
-msgstr ""
-
-#. Default: "Select if the main navigation is enabled, disabled or always active."
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "controlpanel_siguv_settings_navigation_status_description"
-msgstr ""
-
-#. Default: "Navigation Status"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "controlpanel_siguv_settings_navigation_status_title"
-msgstr ""
-
-#. Default: "Siguv Settings"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settigns_title"
-msgstr ""
-
-#. Default: "Collapsed"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_collapsed"
-msgstr ""
-
-#. Default: "Disabled"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_disabled"
-msgstr ""
-
-#. Default: "Enabled"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_enabled"
-msgstr ""
 
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
 msgid "All dates"
@@ -92,6 +42,10 @@ msgstr ""
 msgid "Send E-Mail"
 msgstr ""
 
+#: plonetheme/siguv/profiles/default/controlpanel.xml
+msgid "Siguv Settings"
+msgstr ""
+
 #: plonetheme/siguv/configure.zcml
 msgid "Siguv Theme"
 msgstr ""
@@ -102,6 +56,16 @@ msgstr ""
 
 #: plonetheme/siguv/configure.zcml
 msgid "Uninstalls the plonetheme.siguv add-on."
+msgstr ""
+
+#. Default: "Select if the main navigation is enabled, disabled or always active."
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "controlpanel_siguv_settings_navigation_status_description"
+msgstr ""
+
+#. Default: "Navigation Status"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "controlpanel_siguv_settings_navigation_status_title"
 msgstr ""
 
 #. Default: "Download as iCal"
@@ -123,6 +87,26 @@ msgstr ""
 #. Default: "More Information"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "more_information"
+msgstr ""
+
+#. Default: "Siguv Settings"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settigns_title"
+msgstr ""
+
+#. Default: "Collapsed"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_collapsed"
+msgstr ""
+
+#. Default: "Disabled"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_disabled"
+msgstr ""
+
+#. Default: "Enabled"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_enabled"
 msgstr ""
 
 #. Default: "Download this event in iCal format"

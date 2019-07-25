@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-07-25 14:22+0000\n"
+"POT-Creation-Date: 2019-07-25 14:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,32 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plonetheme.siguv\n"
 
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "All dates"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Attendees"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Call Now"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Name"
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Phone"
+msgstr ""
+
 #: plonetheme/siguv/configure.zcml
 msgid "Installs the plonetheme.siguv add-on."
+msgstr ""
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Send E-Mail"
 msgstr ""
 
 #: plonetheme/siguv/profiles/default/controlpanel.xml
@@ -47,6 +71,27 @@ msgstr ""
 msgid "controlpanel_siguv_settings_navigation_status_title"
 msgstr ""
 
+#. Default: "Download as iCal"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "label_add_to_ical"
+msgstr ""
+
+#. Default: "Upcoming Events"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+msgid "mode_future_link"
+msgstr ""
+
+#. Default: "Past Events"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+msgid "mode_past_link"
+msgstr ""
+
+#. Default: "More Information"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "more_information"
+msgstr ""
+
 #. Default: "Siguv Settings"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settigns_title"
@@ -65,4 +110,20 @@ msgstr ""
 #. Default: "Enabled"
 #: plonetheme/siguv/controlpanel/controlpanel.py
 msgid "siguv_settings_navigation_status_enabled"
+msgstr ""
+
+#. Default: "Download this event in iCal format"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "title_add_to_ical"
+msgstr ""
+
+#. Default: "When"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "when"
+msgstr ""
+
+#. Default: "Where"
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
+msgid "where"
 msgstr ""

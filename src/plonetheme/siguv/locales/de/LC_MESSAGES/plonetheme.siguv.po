@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-07-25 14:22+0000\n"
+"POT-Creation-Date: 2019-07-25 14:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,9 +14,33 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "All dates"
+msgstr "Alle Daten"
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Attendees"
+msgstr "Teilnehmer"
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Call Now"
+msgstr "Jetzt anrufen"
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Name"
+msgstr "Kontaktname"
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Contact Phone"
+msgstr "Kontakt-Telefon"
+
 #: plonetheme/siguv/configure.zcml
 msgid "Installs the plonetheme.siguv add-on."
 msgstr "Installiert plonetheme.siguv."
+
+#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
+msgid "Send E-Mail"
+msgstr "E-Mail senden"
 
 #: plonetheme/siguv/profiles/default/controlpanel.xml
 msgid "Siguv Settings"
@@ -44,65 +68,6 @@ msgstr "Wählen Sie aus ob die Navigation eingeschaltet, ausgeschaltet oder zuge
 msgid "controlpanel_siguv_settings_navigation_status_title"
 msgstr "Navigation Status"
 
-#. Default: "Siguv Settings"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settigns_title"
-msgstr "Siguv Settings"
-
-#. Default: "Collapsed"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_collapsed"
-msgstr "Zugeklappt"
-
-#. Default: "Disabled"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_disabled"
-msgstr "Ausgeschaltet"
-
-#. Default: "Enabled"
-#: plonetheme/siguv/controlpanel/controlpanel.py
-msgid "siguv_settings_navigation_status_enabled"
-msgstr "Eingeschaltet"
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "All dates"
-msgstr "Alle Daten"
-
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "Attendees"
-msgstr "Teilnehmer"
-
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "Call Now"
-msgstr "Jetzt anrufen"
-
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "Contact Name"
-msgstr "Kontaktname"
-
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "Contact Phone"
-msgstr "Kontakt-Telefon"
-
-#: plonetheme/siguv/configure.zcml
-msgid "Installs the plonetheme.siguv add-on."
-msgstr ""
-
-#: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_summary.pt
-msgid "Send E-Mail"
-msgstr "E-Mail senden"
-
-#: plonetheme/siguv/configure.zcml
-msgid "Siguv Theme"
-msgstr ""
-
-#: plonetheme/siguv/configure.zcml
-msgid "Siguv Theme (uninstall)"
-msgstr ""
-
-#: plonetheme/siguv/configure.zcml
-msgid "Uninstalls the plonetheme.siguv add-on."
-msgstr ""
-
 #. Default: "Download as iCal"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
@@ -123,6 +88,26 @@ msgstr "Vergangene Ereignisse"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_view.pt
 msgid "more_information"
 msgstr "Mehr Informationen"
+
+#. Default: "Siguv Settings"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settigns_title"
+msgstr "Siguv Settings"
+
+#. Default: "Collapsed"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_collapsed"
+msgstr "Zugeklappt"
+
+#. Default: "Disabled"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_disabled"
+msgstr "Ausgeschaltet"
+
+#. Default: "Enabled"
+#: plonetheme/siguv/controlpanel/controlpanel.py
+msgid "siguv_settings_navigation_status_enabled"
+msgstr "Eingeschaltet"
 
 #. Default: "Download this event in iCal format"
 #: plonetheme/siguv/browser/overrides/plone.app.event.browser.event_listing.pt

@@ -1,0 +1,202 @@
+// Links
+
+html {
+  a {
+    color: @siguv-blue;
+    text-decoration: none;
+
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+
+    &:hover {
+      color: rgb(0, 88, 175);
+    }
+  }
+}
+
+// Badges
+
+.badge {
+  &.badge-primary {
+    background-color: @siguv-blue;
+  }
+
+  &.badge-danger {
+    background-color: @siguv-red;
+  }
+
+  &.badge-success {
+    background-color: @siguv-green;
+  }
+
+  &.badge-warning {
+    background-color: @siguv-yellow;
+  }
+
+  &.badge-info {
+    background-color: @siguv-turquoise;
+  }
+}
+
+// Buttons
+
+.btn {
+  &.btn-primary {
+    background-color: @siguv-blue;
+    border-color: @siguv-blue;
+  }
+
+  &.btn-outline-primary {
+    border-color: @siguv-blue;
+    color: @siguv-blue;
+  }
+
+  &.btn-danger {
+    background-color: @siguv-red;
+    border-color: @siguv-red;
+  }
+
+  &.btn-outline-danger {
+    border-color: @siguv-red;
+    color: @siguv-red;
+  }
+
+  &.btn-success {
+    background-color: @siguv-green;
+    border-color: @siguv-green;
+  }
+
+  &.btn-outline-success {
+    border-color: @siguv-green;
+    color: @siguv-green;
+  }
+
+  &.btn-warning {
+    background-color: @siguv-yellow;
+    border-color: @siguv-yellow;
+  }
+
+  &.btn-outline-warning {
+    border-color: @siguv-yellow;
+    color: @siguv-yellow;
+  }
+
+  &.btn-info {
+    background-color: @siguv-turquoise;
+    border-color: @siguv-turquoise;
+  }
+
+  &.btn-outline-info {
+    border-color: @siguv-turquoise;
+    color: @siguv-turquoise;
+  }
+}
+
+// Alerts
+
+.alert {
+  &.alert-primary {
+    background-color: rgba(0, 73, 148, 0.125);
+    border-color: @siguv-blue;
+  }
+
+  &.alert-danger {
+    background-color: rgba(214, 14, 21, 0.125);
+    border-color: @siguv-red;
+  }
+
+  &.alert-success {
+    background-color: rgba(81, 174, 49, 0.125);
+    border-color: @siguv-green;
+  }
+
+  &.alert-warning {
+    background-color: rgba(255, 204, 0, 0.125);
+    border-color: @siguv-yellow;
+  }
+
+  &.alert-info {
+    background-color: rgba(0, 140, 142, 0.125);
+    border-color: @siguv-turquoise;
+  }
+}
+
+// Input
+
+.form-control:focus {
+  border-color: @siguv-blue;
+  box-shadow: 0 0 0 0.2rem rgba(0, 73, 148, 0.125);
+}
+
+// Custom Radio / Checkboxes
+
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: @siguv-blue;
+  border-color: @siguv-blue;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 73, 148, 0.125);
+}
+
+// Backgrounds
+
+.bg-primary {
+  background-color: @siguv-blue;
+}
+
+.bg-danger {
+  background-color: @siguv-red;
+}
+
+.bg-success {
+  background-color: @siguv-green;
+}
+
+.bg-warning {
+  background-color: @siguv-yellow;
+}
+
+.bg-info {
+  background-color: @siguv-turquoise;
+}
+
+// Text
+
+.text-primary {
+  color: @siguv-blue;
+}
+
+.text-danger {
+  color: @siguv-red;
+}
+
+yellow .text-success {
+  color: @siguv-green;
+}
+
+.text-warning {
+  color: @siguv-yellow;
+}
+
+.text-info {
+  color: @siguv-turquoise;
+}
+
+// Plone Portal Messages
+
+.portalMessage {
+  &.info {
+    background-color: @siguv-blue;
+  }
+
+  &.warning {
+    background-color: @siguv-yellow;
+  }
+
+  &.error {
+    background-color: @siguv-red;
+  }
+}

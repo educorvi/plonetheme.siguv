@@ -17,7 +17,6 @@ setup(
     version='1.0a1',
     description="A Plone 5.2 Theme for the siguv cooperation. Based on collective/plonetheme.tokyo !",
     long_description=long_description,
-    # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
@@ -39,24 +38,21 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        # -*- Extra requirements: -*-
-        'plone.app.themingplugins',
         'collective.themefragments',
         'collective.themesitesetup',
         'plone.api>=1.8.4',
+        'plone.app.themingplugins',
+        'plonetheme.tokyo',
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
     ],
     extras_require={
         'test': [
-            'plone.app.testing',
-            # Plone KGS does not use this version, because it would break
-            # Remove if your package shall be part of coredev.
-            # plone_coredev tests as of 2016-04-01.
-            'plone.testing>=5.0.0',
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
+            'plone.app.testing',
+            'plone.testing>=5.0.0',
         ],
     },
     entry_points="""

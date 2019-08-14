@@ -45,6 +45,7 @@
 
 @import 'fonts.less';
 @import 'navigation.less';
+@import 'overrides.less';
 
 html {
   background-color: @siguv-blue;
@@ -112,26 +113,12 @@ html {
     }
   }
 
-  a {
-    color: @siguv-blue;
-    text-decoration: none;
-
-    &:focus,
-    &:active {
-      color: inherit;
-    }
-
-    &:hover {
-      color: @siguv-cyan;
-    }
-  }
-
   #menu-header {
     height: 120px;
 
     &.active {
       background-color: @siguv-white;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #CCC;
     }
 
     .header-wrapper {

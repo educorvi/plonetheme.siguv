@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <action-provider name="portal_workflow" />
+  <action-provider name="portal_types" />
+  <action-provider name="portal_actions" />
+
+  <object name="sidebar_links" meta_type="CMF Action Category">
+
+    <property name="title">Sidebar Links</property>
+
+    <object name="home" meta_type="CMF Action" i18n:domain="collective.sidebar">
+      <property name="icon_expr">string:fa-home</property>
+    </object>
+
+    <object name="login" meta_type="CMF Action" i18n:domain="collective.sidebar">
+      <property name="icon_expr">string:fa-sign-in-alt</property>
+    </object>
+
+    <object name="logout" meta_type="CMF Action" i18n:domain="collective.sidebar">
+      <property name="icon_expr">string:fa-sign-out-alt</property>
+    </object>
+
+  </object>
+
+</object>

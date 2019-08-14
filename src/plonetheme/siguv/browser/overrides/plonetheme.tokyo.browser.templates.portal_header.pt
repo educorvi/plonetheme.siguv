@@ -22,7 +22,7 @@
 
         <div class="col-2">
           <div class="header-icons">
-            <i id="portaltab-burger-menu" class="glyphicon glyphicon-menu-hamburger"></i>
+            <i id="portaltab-burger-menu" class="fal fa-bars"></i>
           </div>
         </div>
 

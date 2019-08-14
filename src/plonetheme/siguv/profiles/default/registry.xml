@@ -30,4 +30,7 @@
 
   <records interface="plonetheme.siguv.controlpanel.controlpanel.ISettings" prefix="plonetheme.siguv" />
 
+  <record name="collective.sidebar.icon_font"><value>Font Awesome Light</value>
+  </record>
+
 </registry>

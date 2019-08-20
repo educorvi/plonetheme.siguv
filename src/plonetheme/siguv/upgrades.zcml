@@ -1,23 +1,32 @@
-<configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
 
   <genericsetup:registerProfile
-    name="to_1010"
-    title="Upgrade profile for version 1.0.0 to 1.0.1"
-    description=""
-    directory="profiles/to_1010"
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
+      name="to_1010"
+      title="Upgrade profile for version 1.0.0 to 1.0.1"
+      description=""
+      directory="profiles/to_1010"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
   <genericsetup:upgradeSteps
       source="1000"
       destination="1010"
       profile="plonetheme.siguv:default">
+
     <genericsetup:upgradeStep
         title="Upgrade from 1.0.0 to 1.0.1"
         description="Set last_compilation registry-values"
         handler="plonetheme.siguv.upgrades.to_1010"
         />
+
   </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      source="1010"
+      destination="1100"
+      profile="plonetheme.siguv:default">
+
+  </genericsetup:upgradeSteps>
+
 </configure>

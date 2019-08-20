@@ -1,5 +1,6 @@
 @import '@{tokyo}';
 
+/* Siguv Colors */
 @siguv-black: #000000;
 @siguv-blue: #004994;
 @siguv-cyan: #0095DB;
@@ -14,6 +15,7 @@
 @siguv-white: #FFFFFF;
 @siguv-yellow: #FFCC00;
 
+/* Tokyo Overrides */
 @tokyo-black: @siguv-black;
 @tokyo-blue: @siguv-blue;
 @tokyo-grey: @siguv-light-grey;
@@ -43,10 +45,12 @@
   @{property}: @value;
 }
 
+/* Imports */
 @import 'fonts.less';
 @import 'navigation.less';
 @import 'overrides.less';
 
+/* Main Styling */
 html {
   background-color: @siguv-blue;
 
@@ -61,7 +65,7 @@ html {
 
     #content {
       .content-inner {
-        padding: 200px 30px 100px 30px;
+        padding: 235px 30px 100px 30px;
       }
     }
 
@@ -73,7 +77,7 @@ html {
 
     &[class^="manage-viewlets"],
     &[class*="manage-viewlets "] {
-      background-color: white;
+      background-color: @siguv-white;
       height: 100%;
       padding: 15px !important;
 
@@ -125,11 +129,13 @@ html {
       display: block;
       padding: 0 30px;
 
-      .header-logo img {
-        height: 71px;
-        width: auto;
-        padding: 0;
-        margin: 25px 0 0 0;
+      .header-logo {
+        img {
+          height: 71px;
+          width: auto;
+          padding: 0;
+          margin: 25px 0 0 0;
+        }
       }
 
       .header-search {
@@ -147,26 +153,35 @@ html {
     margin: 30px 0;
   }
 
-
   #portal-footer-wrapper {
     .page-footer {
       background-color: @siguv-blue;
     }
   }
-
 }
 
-
-@media (min-width: 768px) {
-
+@media (max-width: @screen-sm-max) {
   html {
-    #menu-header {
-      .header-wrapper {
-        .header-search {
-          display: block;
+    body {
+      #content {
+        .content-inner {
+          padding: 180px 30px 100px 30px;
         }
       }
     }
   }
+}
 
+@media (max-width: @screen-xs-max) {
+  html {
+    body {
+      #menu-header {
+        .header-wrapper {
+          .header-search {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }

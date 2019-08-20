@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".navigation-menu").on("click",function(){$("#siguv-navigation").toggleClass("active")})}),define("/home/sarnold/Development/repos/plonetheme.siguv/src/plonetheme/siguv/theme/js/siguv.js",function(){});
+$(document).ready(function(){$(".navigation-handle").on("click",function(){$("#siguv-navigation").toggleClass("active")}),$(".nav-item").hover(function(){$(this).parent().find(".nav-item").removeClass("show"),$(this).hasClass("dropdown")&&$(this).addClass("show")}),$(document).on("click",function(e){!1===$(e.target).is(".nav-item")&&$(".nav-item").removeClass("show")})}),define("/home/jesse/Development/repos/plonetheme.siguv/src/plonetheme/siguv/theme/js/siguv.js",function(){});
 //# sourceMappingURL=siguv-compiled.js.map

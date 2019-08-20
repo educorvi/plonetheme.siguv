@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-from plone.app.upgrade.utils import loadMigrationProfile
+
+import logging
 
 
-def reload_gs_profile(context):
-    loadMigrationProfile(
-        context,
-        'profile-plonetheme.siguv:default',
-    )
+logger = logging.getLogger(__name__)
+
+
+def to_1010(context):
+    context.runAllImportStepsFromProfile('plonetheme.siguv:to_1010')
+    logger.info('Updated registry-entries for less cache key')

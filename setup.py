@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='plonetheme.siguv',
-    version='1.0.0',
+    version='1.0.1',
     description="A Plone 5.2 Theme for the siguv cooperation. Based on collective/plonetheme.tokyo !",
     long_description=long_description,
     classifiers=[

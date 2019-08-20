@@ -17,7 +17,7 @@
     <value key="enabled">True</value>
     <value key="compile">True</value>
     <value key="depends">tokyo,tokyo-bootstrap</value>
-    <value key="last_compilation">2019-08-19 13:00:00</value>
+    <value key="last_compilation">2019-08-20 16:00:00</value>
   </records>
 
   <records interface="Products.CMFPlone.interfaces.IBundleRegistry" prefix="plone.bundles/siguv-static">
@@ -25,7 +25,7 @@
     <value key="enabled">True</value>
     <value key="compile">False</value>
     <value key="depends">siguv</value>
-    <value key="last_compilation">2019-08-19 13:00:00</value>
+    <value key="last_compilation">2019-08-20 16:00:00</value>
   </records>
 
   <records interface="plonetheme.siguv.controlpanel.controlpanel.ISettings" prefix="plonetheme.siguv" />

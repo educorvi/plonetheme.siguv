@@ -10,6 +10,7 @@ class HiddenProfiles(object):
         """Hide uninstall profile from site-creation and quickinstaller."""
         return [
             'plonetheme.siguv:uninstall',
+            'plonetheme.siguv:to_1010',
         ]
 
 

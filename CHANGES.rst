@@ -1,15 +1,15 @@
 Changelog
 =========
 
-
-1.0a1 (unreleased)
+1.0.1 (2019-08-20)
 ------------------
 
-- Improve Navigation Styling. #4130
-  [santonelli]
-
-- Fixed @@manage-viewlets View-Styling. #3951
+- Updated Navigation Bar. #4178
   [jstippel]
 
-- Initial release.
-  [sarn0ld]
+
+1.0.0 (2019-08-19)
+------------------
+
+- Initial Release.
+  [santonelli, sarnold, jstippel]

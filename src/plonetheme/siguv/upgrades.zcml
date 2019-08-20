@@ -2,15 +2,22 @@
   xmlns="http://namespaces.zope.org/zope"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
 
-  <!-- -*- extra stuff goes here -*- -->
-  <!--<genericsetup:upgradeStep
-    source="*"
-    destination="1001"
-    title="Reload GS profiles"
+  <genericsetup:registerProfile
+    name="to_1010"
+    title="Upgrade profile for version 1.0.0 to 1.0.1"
     description=""
-    profile="plonetheme.siguv:default"
-    handler=".upgrades.reload_gs_profile"
-    />-->
+    directory="profiles/to_1010"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
 
-
+  <genericsetup:upgradeSteps
+      source="1000"
+      destination="1010"
+      profile="plonetheme.siguv:default">
+    <genericsetup:upgradeStep
+        title="Upgrade from 1.0.0 to 1.0.1"
+        description="Set last_compilation registry-values"
+        handler="plonetheme.siguv.upgrades.to_1010"
+        />
+  </genericsetup:upgradeSteps>
 </configure>

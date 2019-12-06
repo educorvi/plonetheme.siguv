@@ -11,6 +11,9 @@ Added:
 
 Changed:
 
+- Cleanup buildout, sync requirements and versions upstream
+  [santonelli]
+  
 - Removed theming plugins from requirements.
   [santonelli]
 

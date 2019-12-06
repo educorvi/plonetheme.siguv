@@ -37,10 +37,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'collective.themefragments',
-        'collective.themesitesetup',
         'plone.api>=1.8.4',
-        'plone.app.themingplugins',
         'plonetheme.tokyo',
         'Products.GenericSetup>=1.8.2',
         'setuptools',

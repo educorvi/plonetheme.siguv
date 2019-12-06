@@ -5,7 +5,17 @@ Changelog
 1.2.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+Added:
+
+- Nothing added yet.
+
+Changed:
+
+- Removed theming plugins from requirements.
+  [santonelli]
+
+- Removed overrides for event listing and view.
+  [santonelli]
 
 
 1.1.0 (2019-12-06)

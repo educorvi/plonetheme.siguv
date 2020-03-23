@@ -2,20 +2,89 @@
 
 :root {
   --siguv-black: #000000;
-  --siguv-blue: #004994;
-  --siguv-cyan: #0095DB;
-  --siguv-green: #51AE31;
-  --siguv-grey: #555555;
+  --siguv-blue: #606EB2;
+  --siguv-cyan: #D62598;
+  --siguv-green: #64A70B;
+  --siguv-grey: #505759;
   --siguv-light-green: #AFCA06;
   --siguv-light-grey: #9C9C9C;
-  --siguv-orange: #F39200;
-  --siguv-red: #D40F14;
-  --siguv-turquoise: #008C8E;
-  --siguv-violett: #B80D78;
+  --siguv-orange: #F6BE00;
+  --siguv-red: #EF3340;
+  --siguv-turquoise: #E56DB1;
+  --siguv-violett: #AF1685;
   --siguv-white: #FFFFFF;
-  --siguv-yellow: #FFCC00;
+  --siguv-yellow: #FFE900;
+}
+
+html {
+  background-color: #606EB2 !important;
 }
 
 body footer {
   background-color: var(--siguv-black);
+}
+
+html body {
+  font-family: 'Cambay', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/cambay/Cambay-Regular.ttf') format('truetype');
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/cambay/Cambay-Regular.ttf') format('truetype');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/cambay/Cambay-Bold.ttf') format('truetype');
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Cambay';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/cambay/Cambay-Italic.ttf') format('truetype');
+}
+
+/* Italic Semi-Bold */
+@font-face {
+  font-family: 'Cambay';
+  font-style: italic;
+  font-weight: 500;
+  src: url('fonts/cambay/Cambay-Italic.ttf') format('truetype');
+}
+
+/* Italic Bold */
+@font-face {
+  font-family: 'Cambay';
+  font-style: italic;
+  font-weight: 600;
+  src: url('fonts/cambay/Cambay-BoldItalic.ttf') format('truetype');
+}
+
+.header-search {
+	display: none !important;
+}
+
+.figure-caption {
+    font-size: 110%;
+    color: #505759;
+}
+
+#portal-footer-wrapper .page-footer {
+    background-color: #64A70B !important;
 }

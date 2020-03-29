@@ -17,7 +17,7 @@
 }
 
 html {
-  background-color: #606EB2 !important;
+  background-color: #64A70B !important;
 }
 
 body footer {
@@ -26,6 +26,29 @@ body footer {
 
 html body {
   font-family: 'Cambay', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+a#edi_myfolder {
+  background-color: #64A70B !important;
+  color: #ffffff !important;
+  padding-left:7px !important;
+  padding-right:7px !important;
+}
+
+html #menu-header .header-wrapper .header-logo img {
+    height: auto !important;
+}
+
+html #menu-header {
+    height: 180px !important;
+}
+
+#siguv-navigation.enabled {
+    top: 180px !important;
+}
+
+html body #content .content-inner {
+    padding: 280px 30px 100px 30px !important;
 }
 
 /* Regular */
@@ -88,3 +111,9 @@ html body {
 #portal-footer-wrapper .page-footer {
     background-color: #64A70B !important;
 }
+
+.page-footer a:hover {
+    color: #F6BE00 !important;
+    text-decoration: none;
+}
+

@@ -6,19 +6,19 @@
 
       <div class="row">
 
-        <div class="col-6">
+        <div class="col-10">
           <a class="header-logo" href="${navroot}">
-            <img src="${python:logo if logo else navroot + '/++theme++plonetheme.siguv/logo/bg-etem.svg'}" alt="${logo_title}" title="${logo_title}">
+            <img class="img-fluid" src="${python:logo if logo else navroot + '/++theme++plonetheme.siguv/logo/bg-etem.svg'}" alt="${logo_title}" title="${logo_title}">
           </a>
         </div>
 
-        <div class="col-4">
+        <!--<div class="col-4">
           <form class="header-search" action="" tal:define="search_url context/@@plone_portal_state/portal_url" tal:attributes="action python:search_url+'/@@search'">
             <div class="form-group">
                 <input type="text" class="form-control" id="search" name="SearchableText" placeholder="Suchbegriff oder Webcode">
             </div>
           </form>
-        </div>
+	  </div>-->
 
         <div class="col-2">
           <div class="header-icons">

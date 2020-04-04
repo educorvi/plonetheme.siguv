@@ -117,6 +117,11 @@ html body #content .content-inner {
     text-decoration: none;
 }
 
+.image-inline {
+    max-width: 100%;
+    height: auto;
+}
+
 .message {
   margin-top: 10px;
   max-width: 80%;

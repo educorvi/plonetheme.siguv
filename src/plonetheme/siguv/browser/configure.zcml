@@ -11,11 +11,15 @@
       layer="plonetheme.siguv.interfaces.IPlonethemeSiguvLayer"
       />
 
-  <plone:static
+  <!--<plone:static
       name="plonetheme.siguv"
       type="plone"
       directory="static"
-      />
+      />-->
+
+  <browser:resourceDirectory
+    name="plonetheme.siguv"
+    directory="static" />
 
   <browser:viewlet
       name="siguv.navigation"

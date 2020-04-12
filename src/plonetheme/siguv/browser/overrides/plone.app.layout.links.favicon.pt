@@ -1,8 +1,8 @@
 <tal:favicon define="portal_url view/site_url">
-  <link rel="apple-touch-icon" sizes="180x180" href="++plone++plonetheme.siguv/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="++plone++plonetheme.siguv/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="++plone++plonetheme.siguv/favicon/favicon-16x16.png">
-  <link rel="manifest" href="++plone++plonetheme.siguv/favicon/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="++resource++plonetheme.siguv/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="++resource++plonetheme.siguv/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="++resource++plonetheme.siguv/favicon/favicon-16x16.png">
+  <link rel="manifest" href=" ++resource++plonetheme.siguv/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 </tal:favicon>
